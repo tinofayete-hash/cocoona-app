@@ -32,13 +32,13 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
       className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
     >
       {/* Image */}
-      <div className="relative bg-cocoona-cream p-8 flex items-center justify-center h-48 overflow-hidden group">
-        <motion.div
+      <div className="relative bg-cocoona-cream flex items-center justify-center h-48 overflow-hidden group">
+        <motion.img
           whileHover={{ scale: 1.1 }}
-          className="text-6xl transition-transform"
-        >
-          {product.image}
-        </motion.div>
+          src={product.image}
+          alt={product.name}
+          className="w-full h-full object-cover transition-transform"
+        />
         {product.badge && (
           <div className="absolute top-3 right-3 bg-cocoona-rose text-white text-xs font-bold px-3 py-1 rounded-full">
             {product.badge}
