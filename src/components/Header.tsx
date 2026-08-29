@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { ShoppingBag, User, LogOut } from 'lucide-react'
 import { useStore } from '@/store/useStore'
-import { useState } from 'react'
 
 export default function Header() {
   const { cart, user, isAuthenticated, logout } = useStore()
