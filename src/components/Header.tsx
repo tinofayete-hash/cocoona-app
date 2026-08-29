@@ -8,7 +8,6 @@ import { useState } from 'react'
 
 export default function Header() {
   const { cart, user, isAuthenticated, logout } = useStore()
-  const [menuOpen, setMenuOpen] = useState(false)
   const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0)
 
   return (
