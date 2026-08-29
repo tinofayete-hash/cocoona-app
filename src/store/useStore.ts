@@ -75,7 +75,7 @@ export const useStore = create<Store>((set, get) => ({
       },
       isAuthenticated: true,
     }),
-  signup: (email, name, password) =>
+  signup: (email, name, _password) =>
     set({
       user: {
         id: '1',
