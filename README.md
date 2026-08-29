@@ -142,3 +142,4 @@ Pour des questions ou améliorations, contactez Tino (Creative Nation)
 
 **Version**: 0.1.0  
 **Créé avec** ❤️ pour Cocoona
+
