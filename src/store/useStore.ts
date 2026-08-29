@@ -66,7 +66,7 @@ export const useStore = create<Store>((set, get) => ({
   // Auth
   user: null,
   isAuthenticated: false,
-  login: (email, password) =>
+  login: (email, _password) =>
     set({
       user: {
         id: '1',
